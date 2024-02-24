@@ -1,5 +1,8 @@
-function Footer(props) {
-    <div>
-        <img>RandoCat</img>
-    </div>
-}
+function Footer() {
+    return (
+      <div>
+        Footer
+      </div>
+    )
+  }
+  export default Footer;

@@ -1,6 +1,6 @@
 ### Tome-Cat Project - Frontend
 
-# Team Members
+## Team Members
 - Erick Valencia
 - Taz Campbell
 - Jason Kulak

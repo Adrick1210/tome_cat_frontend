@@ -3,7 +3,7 @@ import App from './App'
 import Index from './pages/Index'
 import Show from './pages/Show'
 import About from './pages/About'
-import { allBooksLoader, oneBookLoader} from './Loaders/bookLoaders'
+import { allBooksLoader, oneBookLoader } from './Loaders/bookLoaders'
 import { aboutLoader } from './Loaders/aboutLoader'
 import { updateAction, createAction, deleteAction } from './actions'
 
@@ -13,7 +13,7 @@ const router = createBrowserRouter(
 
             <Route path="" element={<Index/>} loader={allBooksLoader}/>
 
-            <Route path=":id" element={<Show/>} loader={oneBookLoader}/>
+            <Route path=":id" element={<Show/>} loader={oneBookLoader} />
 
             <Route path="/about" element={<About/>} loader={aboutLoader}/>
 
