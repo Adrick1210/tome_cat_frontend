@@ -16,6 +16,7 @@ function Show() {
         <input type="text" name="title" placeholder={book.title} />
         <input type="text" name="author" placeholder={book.author} />
         <input type="checkbox" name="read" />
+        <input type="submit" value="book update"/>
       </Form>
     </div>
   );
