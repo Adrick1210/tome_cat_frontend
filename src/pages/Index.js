@@ -22,12 +22,14 @@ function Index() {
         {isModalOpen && (
           <Modal>
             <h2>Create a Book</h2>
-            <Form>
+            <Form action="/create" method="post">
               <input type="text" name="title" placeholder="New Title" />
               <input type="text" name="author" placeholder="Author Name" />
               <input type="checkbox" name="read" />
               <input type="submit" value={"Create Book"} />
+              
             </Form>
+            {console.log()}
             <button onClick={handleCloseModal}>Close Form</button>
           </Modal>
         )}
