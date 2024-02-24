@@ -9,7 +9,7 @@ export const createAction = async ({ request }) => {
     const createdBook = {
         title: formData.get("title"),
         author: formData.get("author"),
-        read: formData.get("read") === "on" ? true : false
+        read: formData.get("read") //=== "on" ? true : false
     };
     console.log(createdBook)
     await fetch(`${URL}/books`, {
@@ -29,7 +29,7 @@ export const updateAction = async ({ request, params }) => {
     const updatedBook = {
         title: formData.get("title"),
         author: formData.get("author"),
-        read: formData.get("read") === "on" ? true : false
+        read: formData.get("read") //=== "on" ? true : false
     };
 
     await fetch(`${URL}/books/${params.id}`, {
@@ -40,4 +40,13 @@ export const updateAction = async ({ request, params }) => {
         body: JSON.stringify(updatedBook),
     });
     return redirect("/");
+}
+
+//delete a book
+export const deleteAction = async ({ params }) => {
+    await fetch(`${URL}/books/${ params.id }`,{
+        //method to delete
+        method: "delete",
+    })
+    return redirect('/')
 }

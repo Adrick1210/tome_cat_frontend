@@ -5,7 +5,7 @@ import Show from './pages/Show'
 import About from './pages/About'
 import { allBooksLoader, oneBookLoader } from './Loaders/bookLoaders'
 import { aboutLoader } from './Loaders/aboutLoader'
-import { createAction } from './actions'
+import { createAction, updateAction, deleteAction } from './actions'
 
 const router = createBrowserRouter(
     createRoutesFromElements(
@@ -19,9 +19,9 @@ const router = createBrowserRouter(
 
             <Route path="create" action={createAction}/>
 
-            {/* <Route path="update/:id" action={updateAction}/>
+            <Route path="update/:id" action={updateAction}/>
 
-            <Route path="delete/:id" action={deleteAction}/> */}
+            <Route path="delete/:id" action={deleteAction}/>
         </Route>
     )
 )
