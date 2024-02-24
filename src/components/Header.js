@@ -1,8 +1,7 @@
-function Header() {
-  return (
-    <div>
-      Header
-    </div>
-  )
+function Header(props) {
+    return (
+        <div>Tome Cat</div>
+    )
 }
-export default Header;
+
+export default Header
