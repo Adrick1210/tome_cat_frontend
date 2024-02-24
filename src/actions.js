@@ -41,3 +41,12 @@ export const updateAction = async ({ request, params }) => {
     });
     return redirect("/");
 }
+
+//delete a book
+export const deleteAction = async ({ params }) => {
+    await fetch(`${URL}/books/${ params.id }`,{
+        //method to delete
+        method: "delete",
+    })
+    return redirect('/')
+}
