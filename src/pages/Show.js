@@ -5,18 +5,18 @@ function Show() {
 
   return (
     <div className="container">
-      <Form>
-        <input type="text" name="title" placeholder="New Title" />
-        <input type="text" name="author" placeholder="Author Name" />
-        <input type="checkbox" name="read" />
-        <input type="submit" value={"Update Book"} />
-      </Form>
 
       <div className="book-card">
         <h1>{book.title}</h1>
         <h2>{book.author}</h2>
         <h3>{JSON.stringify(book.read)}</h3>
       </div>
+
+      <Form action={`/update/${book._id}`} method="post">
+        <input type="text" name="title" placeholder={book.title} />
+        <input type="text" name="author" placeholder={book.author} />
+        <input type="checkbox" name="read" />
+      </Form>
     </div>
   );
 }
