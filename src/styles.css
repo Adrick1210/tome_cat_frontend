@@ -15,3 +15,14 @@
     color: #b39315;
 }
 
+.footer {
+    border: 2px solid white;
+}
+
+.about-button {
+    text-align: center;
+}
+
+.copyright {
+    text-align: center;
+}
