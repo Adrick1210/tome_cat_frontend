@@ -18,10 +18,17 @@ function About() {
               </Link>
               
             </div>
+            
           )
         })}
       </div>
-      About Page...Hello
+      <div>
+        <a href="/">
+          <button>
+            Back to main page
+          </button>
+        </a>
+      </div>
     </div>
   )
 }

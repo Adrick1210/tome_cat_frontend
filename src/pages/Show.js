@@ -46,6 +46,13 @@ function Show() {
           >{`Delete ${book.title}`}</button>
         </Form>
       </div>
+      <div>
+        <a href="/">
+          <button>
+            Back to main page
+          </button>
+        </a>
+      </div>
     </div>
   );
 }
