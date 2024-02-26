@@ -26,12 +26,13 @@ function Show() {
         <button onClick={handleOpenModal}>Update</button>
         {isModalOpen && (
           <Modal>
-            <h2>Update {book.title}</h2>
             <Form action={`/update/${book._id}`} method="post">
+            <h2>Update "{book.title}"</h2>
               <input type="text" name="title" placeholder={book.title} />
               <input type="text" name="author" placeholder={book.author} />
               <input type="checkbox" name="read" />
               <input type="submit" value="book update" />
+              <button onClick={handleCloseModal}>Close</button>
             </Form>
           </Modal>
         )}
