@@ -1,6 +1,10 @@
 function Header(props) {
     return (
-        <div>Tome Cat</div>
+        <div className="header">
+            <h1>Tome Cat</h1>
+
+            {/* random book api */}
+        </div>
     )
 }
 

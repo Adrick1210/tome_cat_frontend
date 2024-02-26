@@ -1,0 +1,17 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
+/* Header.js */
+.header {
+    font-family: "Cedarville Cursive", cursive;
+    font-size: 135%;
+    font-style: normal;
+    background-color: #33451d;
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-shadow: 2px 2px 2px #44200f;
+    color: #b39315;
+}
+
