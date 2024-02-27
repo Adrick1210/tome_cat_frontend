@@ -19,23 +19,26 @@ function Show() {
       <div className="book-card">
         <h1>{book.title}</h1>
         <h2>{book.author}</h2>
-        <h3>{JSON.stringify(book.read)}</h3>
+        <h3>{JSON.stringify(book.read ? "Have Read" : "Need to read")}</h3>
       </div>
 
-      <div className="update-modal">
-        <button onClick={handleOpenModal}>Update</button>
-        {isModalOpen && (
-          <Modal>
-            <h2>Update {book.title}</h2>
+      <button onClick={handleOpenModal}>Update</button>
+      {isModalOpen && (
+        <Modal>
+          <div className="form">
             <Form action={`/update/${book._id}`} method="post">
+              <h3>Update "{book.title}"</h3>
               <input type="text" name="title" placeholder={book.title} />
               <input type="text" name="author" placeholder={book.author} />
               <input type="checkbox" name="read" />
-              <input type="submit" value="book update" />
+              <div className="buttons">
+              <input type="submit" value="Update" />
+              <button onClick={handleCloseModal}>Close</button>
+              </div>
             </Form>
-          </Modal>
-        )}
-      </div>
+          </div>
+        </Modal>
+      )}
 
       <div className="delete-button">
         <Form action={`/delete/${book._id}`} method="post">
@@ -47,9 +50,7 @@ function Show() {
       </div>
       <div>
         <a href="/">
-          <button>
-            Back to main page
-          </button>
+          <button>Back to main page</button>
         </a>
       </div>
     </div>
