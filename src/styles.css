@@ -88,6 +88,7 @@ input[type="submit"] {
 
 .footer {
   border: 2px solid white;
+  background-color: #b39315;
 }
 
 .about-button {
@@ -96,4 +97,5 @@ input[type="submit"] {
 
 .copyright {
   text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
