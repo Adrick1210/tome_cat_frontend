@@ -30,18 +30,37 @@
 }
 
 .modal Form {
-  border-radius: 10px;
+  box-shadow: 1px 1px 10px grey;
+  background-color: whitesmoke;
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
   gap: 15px;
   text-align: center;
-  background-color: white;
-  width: 300px;
+  width: 295px;
+  height: 295px;
+  padding: 1.8px;
+  margin-right: 10px;
+}
+
+.form {
+  background-color: rgb(237, 234, 234);
+  border-radius: 15px;
+  padding: 8px;
   height: 300px;
-  margin-left: 15px;
+  width: 300px;
   margin-top: 200px;
-  margin-right: 15px;
-  padding: 12px;
+  margin-left: 18px;
+}
+
+.buttons {
+  padding: 10px;
+}
+
+.form button {
+  width: 25%;
+  margin: auto;
+  padding: 3px;
 }
 
 input[type="text"] {
@@ -56,4 +75,25 @@ input[type="text"] {
 
 input[name="read"] {
   height: 45px;
+}
+
+input[type="submit"] {
+  width: 28%;
+  margin: auto;
+  padding: 3px;
+  margin-right: 50px;
+}
+
+/* footer style  */
+
+.footer {
+  border: 2px solid white;
+}
+
+.about-button {
+  text-align: center;
+}
+
+.copyright {
+  text-align: center;
 }

@@ -6,11 +6,15 @@ function Footer() {
     window.location.href = "/about";
   }
     return (
-      <div>
-        <button onClick={handleClick}>
-          About the Devs
-        </button>
-        Footer
+      <div className="footer">
+        <div className="copyright">
+          <h3>High-Five Development &copy; 2024</h3>
+        </div>
+        <div className="about-button">
+          <button onClick={handleClick}>
+            About the Devs
+          </button>
+        </div>           
       </div>
     )
   }
