@@ -6,13 +6,10 @@
   background-image: url("https://wallpapers.com/images/hd/library-background-j511zvk12mbkip3l.jpg");
   background-position: center;
   background-size: cover;
+  height: 780px;
   background-repeat: no-repeat;
     display: flex;
     /* border-radius: 20px; */
-}
-
-.index-button {
-
 }
 
 .list-container {
