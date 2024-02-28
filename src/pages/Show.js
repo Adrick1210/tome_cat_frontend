@@ -29,8 +29,8 @@ function Show() {
           <div className="form">
             <Form action={`/update/${book._id}`} method="post">
               <h3>Update "{book.title}"</h3>
-              <input type="text" name="title" placeholder={book.title} />
-              <input type="text" name="author" placeholder={book.author} />
+              <input type="text" name="title" value={book.title} />
+              <input type="text" name="author" value={book.author} />
               <input type="checkbox" name="read" />
               <div className="buttons">
               <input type="submit" value="Update" />
