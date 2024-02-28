@@ -17,11 +17,11 @@ function Show() {
   return (
     <div className="container">
       <div className="book-card">
-        <h1>{book.title}</h1>
+        <div className="card-content">
+        <h1 className="card-title">{book.title}</h1>
         <h2>{book.author}</h2>
         <h3>{JSON.stringify(book.read ? "Have Read" : "Need to read")}</h3>
-      </div>
-
+      
       <button onClick={handleOpenModal}>Update</button>
       {isModalOpen && (
         <Modal>
@@ -47,12 +47,17 @@ function Show() {
             type="submit"
           >{`Delete ${book.title}`}</button>
         </Form>
+
       </div>
+      </div>
+      </div>
+
       <div>
         <a href="/">
           <button>Back to main page</button>
         </a>
       </div>
+      
     </div>
   );
 }
