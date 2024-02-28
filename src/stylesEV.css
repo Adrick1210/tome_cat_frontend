@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Poiret+One&family=Rubik+Doodle+Triangles&family=Silkscreen:wght@400;700&family=Special+Elite&display=swap');
+
+
+/* INDEX PAGE STYLING */
+.index-container {
+    background-color: #87846c;
+    display: flex;
+    border-radius: 20px;
+}
+
+.index-navigation {
+    font-family: "Special Elite", system-ui;
+    font-weight: 200;
+    border-radius: 15px;
+    padding: 8px;
+    width: 10%;
+    position: absolute;
+    right: 840px;
+    top: 800px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(246, 7, 7);
+}
+
+.index-button {
+
+}
+
+.list-container {
+    font-family: "Special Elite", system-ui;
+    border-radius: 40px;
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-bottom: 50px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    height: 480px;
+    text-align: center;
+    padding: 10px;
+    background-color: #20ef65;
+    box-shadow: 15px 10px 10px #eeedea;
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+  }
+
+  .list-item {
+    margin-bottom: 1px;
+  }
+
+  .list.item h1 {
+    line-height: 2.;
+  }
