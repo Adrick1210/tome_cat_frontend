@@ -31,10 +31,11 @@ function Header(props) {
         <div className="header">
 
             <div className='randoBook'>
-                {imageUrl && <img lassName='headerImage' src={imageUrl} c alt="Random Book" />}
+                {imageUrl && <img className='header-image' src={imageUrl} alt="Random Book" />}
             </div>
-
-            <h1 className='title'>Tome Cat</h1>
+            <div className='title'>
+            <h1>Tome Cat</h1>
+            </div>
             
         </div>
     );

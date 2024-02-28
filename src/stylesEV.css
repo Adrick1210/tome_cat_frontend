@@ -3,24 +3,12 @@
 
 /* INDEX PAGE STYLING */
 .index-container {
-    background-color: #87846c;
+  background-image: url("https://wallpapers.com/images/hd/library-background-j511zvk12mbkip3l.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
     display: flex;
-    border-radius: 20px;
-}
-
-.index-navigation {
-    font-family: "Special Elite", system-ui;
-    font-weight: 200;
-    border-radius: 15px;
-    padding: 8px;
-    width: 10%;
-    position: absolute;
-    right: 840px;
-    top: 800px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    background-color: rgb(246, 7, 7);
+    /* border-radius: 20px; */
 }
 
 .index-button {

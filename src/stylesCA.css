@@ -69,3 +69,87 @@ input[type="submit"] {
   padding: 3px;
   margin-right: 50px;
 }
+
+/* header */
+ .title {
+  border: 1px solid black;
+  position: absolute;
+  top: 0;
+  right: 6px;
+  width: 220px;
+  height: 175px;
+  font-family: "Special Elite", system-ui;
+  font-size: 135%;
+  font-style: normal;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  color: #b39315;
+  text-shadow: 3px 3px 3px #44200f;
+ }
+
+ .title h1 {
+  margin-left: 18px;
+  margin-top: 55px;
+ }
+
+ /* add book button  */
+
+ .index-button {
+  position: absolute;
+  width: 155px;
+  height: 40px;
+  margin-top: 10px;
+  margin-left: 820px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: 1px solid #34974d;
+  background-color: #3aa856;
+}
+
+.index-button, .button__icon, .button__text {
+  transition: all 0.3s;
+}
+
+.index-button .button__text {
+  transform: translateX(30px);
+  color: #fff;
+  font-weight: 600;
+}
+
+.index-button .button__icon {
+  position: absolute;
+  transform: translateX(109px);
+  height: 100%;
+  width: 39px;
+  background-color: #34974d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.index-button .svg {
+  width: 30px;
+  stroke: #fff;
+}
+
+.index-button:hover {
+  background: #34974d;
+}
+
+.index-button:hover .button__text {
+  color: transparent;
+}
+
+.index-button:hover .button__icon {
+  width: 148px;
+  transform: translateX(0);
+}
+
+.index-button:active .button__icon {
+  background-color: #2e8644;
+}
+
+.index-button:active {
+  border: 1px solid #2e8644;
+}
