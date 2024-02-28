@@ -3,8 +3,8 @@ import { useState } from "react";
 import Modal from "../components/Modal";
 
 function Index() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
   const books = useLoaderData();
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleOpenModal = () => {
     setIsModalOpen(true);
@@ -21,22 +21,21 @@ function Index() {
         {isModalOpen && (
           <Modal>
             <div className="form">
-            <Form action="/create" method="post">
-              <h2>Create a Book</h2>
-              <input type="text" name="title" placeholder="New Title" />
-              <input type="text" name="author" placeholder="Author Name" />
-              <input type="checkbox" name="read" />
-              <div className="buttons">
-              <input type="submit" value={"Create"} />
-              <button onClick={handleCloseModal}>Close</button>
-              </div>
-            </Form>
+              <Form action="/create" method="post">
+                <h2>Create a Book</h2>
+                <input type="text" name="title" placeholder="New Title" />
+                <input type="text" name="author" placeholder="Author Name" />
+                <input type="checkbox" name="read" />
+                <div className="buttons">
+                  <input type="submit" value={"Create"} />
+                  <button onClick={handleCloseModal}>Close</button>
+                </div>
+              </Form>
             </div>
           </Modal>
         )}
         <button>Read Me</button>
       </nav>
-
 
       <div className="list-container">
         {books.map((items) => {

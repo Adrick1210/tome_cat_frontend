@@ -4,10 +4,11 @@
 /* Header.js */
 .header {
   font-family: "Cedarville Cursive", cursive;
-  font-size: 135%;
+  font-size: 65%;
   font-style: normal;
   background-color: #33451d;
   display: flex;
+  align-items: center;
   justify-content: center;
   text-decoration: underline;
   text-decoration-style: wavy;
