@@ -72,12 +72,12 @@ input[type="submit"] {
 
 /* header */
  .title {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   position: absolute;
   top: 0;
   right: 6px;
   width: 220px;
-  height: 175px;
+  height: 90px;
   font-family: "Special Elite", system-ui;
   font-size: 135%;
   font-style: normal;
@@ -89,7 +89,7 @@ input[type="submit"] {
 
  .title h1 {
   margin-left: 18px;
-  margin-top: 55px;
+  margin-top: 25px;
  }
 
  /* add book button  */
