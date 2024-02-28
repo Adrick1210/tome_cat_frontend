@@ -28,25 +28,10 @@ function Header(props) {
         fetchRandomBook();
     }, []); // Empty dependency array to ensure the effect runs only once when the component mounts
 
-    const [isOpen, setIsOpen] = useState(false)
-        const handleMenuClick = () => {
-            setIsOpen(!isOpen)
-            }
-
-
     return (
         <div className="header">
             {imageUrl && <img src={imageUrl} alt="Random Book" />}
             <h1>Tome Cat</h1>
-
-            <div className='aLaCarte'>
-                <button className='hamburger' onClick={handleMenuClick}>
-                    <div className='hamLine'></div>
-                    <div className='hamLine'></div>
-                    <div className='hamLine'></div>
-                </button>
-                {isOpen && <div className='menu'>{<Link to={'/about'}/>}</div>}
-            </div>
             
         </div>
     );
