@@ -4,12 +4,15 @@ function About() {
   const about = useLoaderData();
   
   return (
-    <div>
+    <div className="background">
       <div>
         {about.map((about) => {
           return (
-            <div>
+            <div className="aboutPage">
+              <div className="aboutName">
+                
               <h1>{about.name}</h1>
+              </div>
               <Link to={about.LinkedIn}>
                 <h1>LinkedIn</h1>
               </Link>
@@ -21,7 +24,7 @@ function About() {
             
           )
         })}
-      </div>
+      </div>50%
       <div>
         <a href="/">
           <button>

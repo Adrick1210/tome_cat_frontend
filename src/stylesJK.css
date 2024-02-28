@@ -1,13 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Poiret+One&family=Rubik+Doodle+Triangles&family=Silkscreen:wght@400;700&family=Special+Elite&display=swap');
 
 .aboutPage {
-    border: 2px solid black;
     font-family: "Special Elite", system-ui;
     font-weight: 400;
     font-style: normal;
+    transform: rotate(angle);
+    border: 2px solid black;
+    border-style: dotted;
+    margin-left: 75%;
+    background-color: whitesmoke;
+    z-index: 1;
+    opacity: .6;
 }
 
-.devNames {
+.background {
+    background-image: url("https://blog.stolle.email/wp-content/uploads/2020/04/headerpic-scaled.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
+
+.aboutName {
+    
+}
+
 .about-links {
+
 }
