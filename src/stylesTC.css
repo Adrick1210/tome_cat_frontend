@@ -8,28 +8,43 @@
     font-family: "Special Elite", system-ui;
     font-size: 135%;
     font-style: normal;
-    background-color: #33451d;
+    background-color: #445b1f;
+    padding-top: 4%;
     display: flex;
-    justify-content: space-between;
     justify-content: space-around;
+    justify-content: space-between;
     text-decoration: underline;
+    align-content: center;
     text-decoration-style: dashed;
-    text-shadow: 2px 2px 2px #44200f;
+    text-shadow: 3px 3px 3px #44200f;
     color: #b39315;
+    
   }
+
+.headerImage {
+    width: 120px;
+    height: 125145px;
+}
 
   /* Footer.js  */
 
 .footer {
-    border: 2px solid white;
+    border: 1px solid white;
     background-color: #b39315;
-  }
-  
-  .about-button {
-    text-align: center;
-  }
-  
-  .copyright {
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
+
+.about-button {
+    text-align: center;
+  }
+  
+.devButton {
+    color: #cdb61a;
+    background-color: #445b1f;
+}
+
+.footerImage {
+    width: 30%;
+    height: 30%;
+}
