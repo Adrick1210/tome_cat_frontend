@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from 'react';
 
 function Header(props) {
+    //use state
     const [imageUrl, setImageUrl] = useState(null);
 
     useEffect(() => {
         async function fetchRandomBook() {
             try {
+                //generate a random number for the api call
                 const randomNumber = Math.floor(Math.random() * (2000000 - 1300000 + 1) + 13000000);
+                //make the api call
                 const response = await fetch(`https://covers.openlibrary.org/b/id/${randomNumber}.json`);
 
                 if (response.ok) {
