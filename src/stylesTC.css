@@ -1,21 +1,24 @@
 /* Imports */
 @import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
 
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Poiret+One&family=Rubik+Doodle+Triangles&family=Silkscreen:wght@400;700&family=Special+Elite&display=swap');
+
 /* Header.js */
 .header {
-    font-family: "Cedarville Cursive", cursive;
+    font-family: "Special Elite", system-ui;
     font-size: 135%;
     font-style: normal;
     background-color: #33451d;
     display: flex;
+    justify-content: space-between;
     justify-content: space-around;
     text-decoration: underline;
-    text-decoration-style: wavy;
+    text-decoration-style: dashed;
     text-shadow: 2px 2px 2px #44200f;
     color: #b39315;
   }
 
-  /* footer style  */
+  /* Footer.js  */
 
 .footer {
     border: 2px solid white;

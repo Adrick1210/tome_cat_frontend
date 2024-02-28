@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react'
 
 function Header(props) {
     //use state
@@ -30,7 +29,11 @@ function Header(props) {
 
     return (
         <div className="header">
-            {imageUrl && <img src={imageUrl} alt="Random Book" />}
+            
+            <div className='randoBook'>
+                {imageUrl && <img src={imageUrl} alt="Random Book" />}
+            </div>
+
             <h1>Tome Cat</h1>
             
         </div>
