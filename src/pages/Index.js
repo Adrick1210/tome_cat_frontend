@@ -14,10 +14,14 @@ function Index() {
     setIsModalOpen(false);
   };
 
+  //variables for read and unread books
+  const readBooks = books.filter(book => book.read === true);
+  const unreadBooks = books.filter(book => book.read === false);
+
   return (
-    <div>
-      <nav>
-        <button onClick={handleOpenModal}>Add Book</button>
+    <div className="index-container">
+      <nav className="index-navigation">
+        <button className="index-button" onClick={handleOpenModal}>Add Book</button>
         {isModalOpen && (
           <Modal>
             <div className="form">
@@ -34,21 +38,33 @@ function Index() {
             </div>
           </Modal>
         )}
-        <button>Read Me</button>
       </nav>
 
+{/* Books that have been read */}
       <div className="list-container">
-        {books.map((items) => {
-          return (
-            <div className="list-item" key={items._id}>
-              <Link to={items._id}>
-                <h1>{items.title}</h1>
-              </Link>
-            </div>
-          );
-        })}
+        <h2>Books You've Read:</h2>
+        {readBooks.map((book) => (
+          <div className="list-item" key={book._id}>
+            <Link to={book._id}>
+              <h1>{book.title}</h1>
+            </Link>
+          </div>
+        ))}
+      </div>
+
+ {/* Books that haven't been read */}
+      <div className="list-container">
+        <h2>Books You Haven't Read:</h2>
+        {unreadBooks.map((book) => (
+          <div className="list-item" key={book._id}>
+            <Link to={book._id}>
+              <h1>{book.title}</h1>
+            </Link>
+          </div>
+        ))}
       </div>
     </div>
   );
 }
+
 export default Index;

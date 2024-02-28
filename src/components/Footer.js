@@ -37,9 +37,9 @@ function Footer(props) {
                 <h3>High-Five Development &copy; 2024</h3>
             </div>
             <div className="about-button">
-                <button onClick={handleClick}>About the Devs</button>
+                <button className='devButton' onClick={handleClick}>About the Devs</button>
             </div>
-            {catImageUrl && <img src={catImageUrl} alt="Cat" />}
+            {catImageUrl && <img src={catImageUrl} className="footerImage" alt="Cat" />}
         </div>
     );
 }
