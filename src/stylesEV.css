@@ -6,10 +6,9 @@
   background-image: url("https://wallpapers.com/images/hd/library-background-j511zvk12mbkip3l.jpg");
   background-position: center;
   background-size: cover;
-  height: 780px;
+  height: 840px;
   background-repeat: no-repeat;
-    display: flex;
-    /* border-radius: 20px; */
+  display: flex;
 }
 
 .list-container {
@@ -25,18 +24,20 @@
     height: 480px;
     text-align: center;
     padding: 10px;
-    background-color: #20ef65;
+    background-color: #eed9c4;
     box-shadow: 15px 10px 10px #eeedea;
+    opacity: .7;
 }
+
+.list-item h1 {
+    text-decoration: none;
+    color: black;
+    
+}
+
+
 
 ::-webkit-scrollbar {
     width: 2px;
   }
 
-  .list-item {
-    margin-bottom: 1px;
-  }
-
-  .list.item h1 {
-    line-height: 2.;
-  }
