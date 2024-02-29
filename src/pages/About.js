@@ -9,28 +9,25 @@ function About() {
         {about.map((about) => {
           return (
             <div className="aboutPage">
-              <div className="aboutName">
-                
-              <h1>{about.name}</h1>
+              <div className="aboutName">               
+                <h1>{about.name}</h1>
               </div>
               <Link to={about.LinkedIn}>
                 <h1>LinkedIn</h1>
               </Link>
               <Link to={about.GitHub}>
                 <h1>GitHub</h1>
-              </Link>
-              
-            </div>
-            
+              </Link>              
+            </div>        
           )
         })}
-      </div>50%
-      <div>
-        <a href="/">
-          <button>
-            Back to main page
-          </button>
-        </a>
+      </div>
+      <div className="aboutBackButton">
+            <a href="/">
+              <button>
+                Back to main page
+              </button>
+            </a>
       </div>
     </div>
   )
