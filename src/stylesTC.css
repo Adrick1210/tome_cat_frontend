@@ -38,6 +38,8 @@
 .footer {
     margin-top: auto;
     border: 2px solid black;
+    position: fixed;
+    height: 30%;
 }
 
 .showcase {
