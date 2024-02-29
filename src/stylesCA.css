@@ -104,13 +104,6 @@ input[type="submit"] {
   right: 6px;
   width: 220px;
   height: 90px;
-  font-family: "Special Elite", system-ui;
-  font-size: 135%;
-  font-style: normal;
-  text-decoration: underline;
-  text-decoration-style: wavy;
-  color: #b39315;
-  text-shadow: 3px 3px 3px #44200f;
  }
 
  .title h1 {

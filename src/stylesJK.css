@@ -25,5 +25,11 @@
 }
 
 .about-links {
+    
+}
 
+.aboutBackButton {
+    border: 2px solid black;
+    padding-bottom: 11%;
+    border: absolute;
 }
