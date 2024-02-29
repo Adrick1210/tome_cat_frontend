@@ -26,6 +26,9 @@ function Header(props) {
 
         fetchRandomBook();
     }, []); // Empty dependency array to ensure the effect runs only once when the component mounts
+    function handleClick() {
+        window.location.href = "/about";
+      }
 
     return (
         <div className="header">
@@ -33,9 +36,20 @@ function Header(props) {
             <div className='randoBook'>
                 {imageUrl && <img className='header-image' src={imageUrl} alt="Random Book" />}
             </div>
-            <div className='title'>
-            <h1>Tome Cat</h1>
+
+            <div className="about-button">
+                <button className="devButton" onClick={handleClick}>
+                    About the Devs
+                </button>
             </div>
+
+            <div className='title'>
+                <h1>Tome Cat</h1>
+            </div>
+
+           
+
+            
             
         </div>
     );
