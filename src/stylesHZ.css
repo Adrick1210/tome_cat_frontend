@@ -1,22 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Poiret+One&family=Rubik+Doodle+Triangles&family=Silkscreen:wght@400;700&family=Special+Elite&display=swap');
 
 .book-card{
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     font-family: "Special Elite", system-ui;
     font-weight: 400;
     font-style: normal;
     color: #044D33;
-    background-image: url(https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/funny-cute-cat-reading-book-michal-bednarek.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/funny-cute-cat-reading-book-michal-bednarek.jpg);
     background-size: cover;
     padding: 2rem 0;
     max-width: 35ch;
     border-radius: 0.5rem;
     transition: transform 500ms ease;
+    margin-bottom: 5vh;
+    margin-top: 10ch;
+    border: 10px solid;
 
 }
 
-.book-card::-ms-ticks-before{
-    box-shadow: 0 8px 16px 0 rgba(0,0,0.2,0.2)
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 .book-card:hover{
@@ -47,16 +53,25 @@
     height: 3px;
     width: 100%;
     background: #666D4F;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 500ms ease;
 
 }
 
-.book-card-button{
-    cursor: pointer;
-    display: inline;
-    text-decoration: none;
-    color: #044D33;
-    background-color:#D0A53E;
-    padding: 0.5em 1.25em;
-    border-radius: 0.25em;
+.book-card:hover .card-title::after{
+    transform:scaleX(1);
+}
 
+.book-card-button{
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.back-button{
+   margin: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }

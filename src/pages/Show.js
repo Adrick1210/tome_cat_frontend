@@ -23,6 +23,7 @@ function Show() {
         <h2>{book.author}</h2>
         <h3>{JSON.stringify(book.read ? "Have Read" : "Need to read")}</h3>
       
+      <div className="book-card-button">
       <button onClick={handleOpenModal}>Update</button>
       {isModalOpen && (
         <Modal>
@@ -48,12 +49,13 @@ function Show() {
             type="submit"
           >{`Delete ${book.title}`}</button>
         </Form>
+        </div>
 
       </div>
       </div>
       </div>
 
-      <div>
+      <div className="back-button">
         <a href="/">
           <button>Back to main page</button>
         </a>
