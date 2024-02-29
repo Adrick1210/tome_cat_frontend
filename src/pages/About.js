@@ -12,12 +12,14 @@ function About() {
               <div className="aboutName">               
                 <h1>{about.name}</h1>
               </div>
+              <div className="aboutLinks">
               <Link to={about.LinkedIn}>
                 <h1>LinkedIn</h1>
               </Link>
               <Link to={about.GitHub}>
                 <h1>GitHub</h1>
-              </Link>              
+              </Link>
+              </div>          
             </div>        
           )
         })}
@@ -25,7 +27,7 @@ function About() {
       <div className="aboutBackButton">
             <a href="/">
               <button>
-                Back to main page
+                Home Page
               </button>
             </a>
       </div>
