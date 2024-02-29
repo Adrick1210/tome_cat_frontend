@@ -71,6 +71,32 @@ input[type="submit"] {
 }
 
 /* header */
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  height: 15px;
+}
+
+.randoBook {
+  /* border: 1px solid black; */
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 90px;
+  width: 175px;
+}
+
+.header-image {
+  border-radius: 10px;
+  width: 100px;
+  height: 80px;
+  left: -10px;
+  position: relative;
+  margin-top: 5px;
+  margin-left: 25px;
+}
  .title {
   /* border: 1px solid black; */
   position: absolute;
@@ -145,50 +171,4 @@ input[type="submit"] {
 
 .index-button:active {
   border: 1px solid #2e8644;
-}
-
-/* Header */
-
-.header {
-  height: 15px;
-}
-
-.about-button {
-  border: 1px solid black;
-  opacity: .9;
-}
-
-.randoBook {
-  /* border: 1px solid black; */
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 90px;
-  width: 175px;
-}
-
-.header-image {
-  border-radius: 10px;
-  width: 100px;
-  height: 80px;
-  left: -10px;
-  position: relative;
-  margin-top: 5px;
-  margin-left: 25px;
-}
-
-.showcase {
-  width: 100%;
-  margin-top: 20px;
-  padding-bottom: 0;
-  margin-bottom: 0;
-  position: fixed;
-  bottom: 0;
-}
-
-.footerImage {
-  position: absolute;
-  width: 350px;
-  height: 100px;
-  top: 0;
 }
