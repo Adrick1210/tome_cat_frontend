@@ -23,25 +23,8 @@
 .devButton {
   color: #cdb61a;
   background-color: #445b1f;
-  position: absolute;
-  z-index: 1;
 }
 
 .showcase {
   background-color: #b39315;
-  width: 100%;
-  margin-top: 20px;
-  height: 100px;
-  padding-bottom: 0;
-  margin-bottom: 0;
-  position: fixed;
-  bottom: 0;
-}
-
-.footerImage {
-  position: absolute;
-  width: 350px;
-  height: 100px;
-  margin-left: 850px;
-  top: 0;
 }
