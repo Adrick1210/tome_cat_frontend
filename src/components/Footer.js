@@ -39,11 +39,6 @@ function Footer(props) {
         <div className="copyright">
           <h3>High-Five Development &copy; 2024</h3>
         </div>
-        <div className="about-button">
-          <button className="devButton" onClick={handleClick}>
-            About the Devs
-          </button>
-        </div>
         {catImageUrl && (
           <img src={catImageUrl} className="footerImage" alt="Cat" />
         )}

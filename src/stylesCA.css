@@ -78,13 +78,6 @@ input[type="submit"] {
   right: 6px;
   width: 220px;
   height: 90px;
-  font-family: "Special Elite", system-ui;
-  font-size: 135%;
-  font-style: normal;
-  text-decoration: underline;
-  text-decoration-style: wavy;
-  color: #b39315;
-  text-shadow: 3px 3px 3px #44200f;
  }
 
  .title h1 {
@@ -157,9 +150,6 @@ input[type="submit"] {
 /* Header */
 
 .header {
-  display: flex;
-  justify-content: flex-end;
-  align-content: center;
   height: 15px;
 }
 
@@ -182,15 +172,9 @@ input[type="submit"] {
   margin-left: 25px;
 }
 
-.devButton {
-  position: absolute;
-  z-index: 1;
-}
-
 .showcase {
   width: 100%;
   margin-top: 20px;
-  height: 100px;
   padding-bottom: 0;
   margin-bottom: 0;
   position: fixed;
@@ -201,6 +185,5 @@ input[type="submit"] {
   position: absolute;
   width: 350px;
   height: 100px;
-  margin-left: 850px;
   top: 0;
 }
