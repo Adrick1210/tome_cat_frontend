@@ -28,18 +28,13 @@
     background-color: #44200F;
 }
 
-.about-button {
-    border: 1px solid black;
-    opacity: .9;
-}
+
 
 /* Footer.js  */
 
 .footer {
-    margin-top: auto;
+    margin-top: 2em;
     border: 2px solid black;
-    position: fixed;
-    height: 30%;
 }
 
 .showcase {
@@ -48,6 +43,3 @@
     height: 100px;
 }
 
-.footerImage {
-    margin-left: 50%;
-}
