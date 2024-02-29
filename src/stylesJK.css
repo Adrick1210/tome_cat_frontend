@@ -11,6 +11,9 @@
     background-color: whitesmoke;
     z-index: 1;
     opacity: .6;
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
 }
 
 .background {
@@ -21,15 +24,18 @@
 }
 
 .aboutName {
-    
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
 }
 
-.about-links {
-    
+.aboutLinks {
+    display: flex;
+    flex-direction: column;
 }
 
 .aboutBackButton {
     border: 2px solid black;
-    padding-bottom: 11%;
-    border: absolute;
+    text-orientation: upright;
+    writing-mode: vertical-rl;
 }
