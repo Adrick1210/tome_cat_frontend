@@ -38,4 +38,5 @@
     border: 2px solid black;
     text-orientation: upright;
     writing-mode: vertical-rl;
+    float: right;
 }
