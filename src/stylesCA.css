@@ -118,7 +118,7 @@ input[type="submit"] {
   width: 155px;
   height: 40px;
   margin-top: 10px;
-  margin-left: 820px;
+  margin-left: 880px;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -171,4 +171,20 @@ input[type="submit"] {
 
 .index-button:active {
   border: 1px solid #2e8644;
+}
+
+/* Footer.js  */
+
+.footer {
+  border: 2px solid black;
+}
+
+.showcase {
+  background-color: #b39315;
+  border: 2px solid black;
+  height: 200px;
+}
+
+.showcase img {
+  height: 200px;
 }
