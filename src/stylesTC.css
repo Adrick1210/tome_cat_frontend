@@ -40,8 +40,8 @@
   }
   
   .modal Form {
-    box-shadow: 1px 1px 10px grey;
-    background-color: whitesmoke;
+    box-shadow: 1px 1px 10px #1f0d05;
+    background-color: #758225;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -54,7 +54,7 @@
   }
   
   .form {
-    background-color: rgb(237, 234, 234);
+    background-color: #44200F;
     border-radius: 15px;
     padding: 8px;
     height: 300px;
@@ -71,6 +71,7 @@
     width: 25%;
     margin: auto;
     padding: 3px;
+    background-color: #cdb61a;
   }
   
   input[type="text"] {
@@ -80,11 +81,13 @@
     padding: 6px;
     outline: none;
     border: none;
-    background-color: rgb(233, 232, 232);
+    background-color: #cdb61a;
+    color: #44200F;
   }
   
   input[name="read"] {
     height: 45px;
+    background-color: #44200F;
   }
   
   input[type="submit"] {
@@ -92,6 +95,8 @@
     margin: auto;
     padding: 3px;
     margin-right: 50px;
+    background-color: #cdb61a;
+    color: #44200F;
   }
 
 
