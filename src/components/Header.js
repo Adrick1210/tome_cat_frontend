@@ -39,7 +39,6 @@ function Header(props) {
 
             <div className="about-button">
                 <button className="devButton" onClick={handleClick}>
-                    About the Devs
                 </button>
             </div>
 
