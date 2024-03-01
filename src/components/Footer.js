@@ -29,12 +29,8 @@ function Footer(props) {
     fetchCatImage();
   }, []); // Empty dependency array to ensure the effect runs only once when the component mounts
 
-  function handleClick() {
-    window.location.href = "/about";
-  }
-
   return (
-    <div className="footer">
+   
       <div className="showcase">
         <div className="copyright">
           <h3>High-Five Development &copy; 2024</h3>
@@ -43,7 +39,7 @@ function Footer(props) {
           <img src={catImageUrl} className="footerImage" alt="Cat" />
         )}
       </div>
-    </div>
+  
   );
 }
 
